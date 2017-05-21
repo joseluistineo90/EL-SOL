@@ -1,0 +1,302 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*INICIO Estilos de 2 columnas*/
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	min-height: 100vh;
+	flex-wrap: wrap;
+	font: 90%/1.5 Georgia, "Times New Roman", Times, serif;
+}
+
+h1, h2, h3 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: normal;
+	margin: 0 0 .5em;
+}
+
+h1 {
+	font-size: 2.6em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+p {font-size: 1.4em;
+	margin-left: 5px;
+
+}
+
+
+
+p:first-of-type {
+	font-size: 1.4em;
+	font-style: italic;
+}
+
+a {
+	color: red;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
+
+.col1 {
+	float: left;
+	width: 60%;
+	margin-right: 5%;
+}
+
+.col2 {
+	float: right;
+	width: 35%;
+	margin-top: 10px;
+}
+
+img {
+	max-width: 100%;
+}
+
+.inline {
+	float: right;
+	width: 45%;
+	margin: 0 0 1em 2em;
+	min-width: 200px;
+}
+ @media screen and (max-width: 800px) {
+
+.col1, .col2, .col3 {
+	float: none;
+	width: 100%;
+	margin: 0;
+}
+}
+@media screen and (max-width: 550px) {
+
+.inline {
+	float: none;
+	display: inline-block;
+	width: 90%;
+	margin: 0 auto 2em;
+	min-width: 300px;
+
+}
+}
+
+/*FIN estilos de 2 columnas*/
+
+#contenedor{
+	width:80%;
+	min-width: 300px;
+	margin:0 auto 2em;
+	margin-left: 25px;
+	background:url(./imagenes/fondoparaweb_sm.jpg) repeat;
+	position:relative;
+	overflow: hidden;
+}
+
+
+.yogui{
+	width:50%;
+	min-width: 300px;
+	margin:0 auto 2em;
+	background:url(./imagenes/yogui.png) no-repeat;
+	position:relative;/*obligatorio absoluta en las imagenes para animar*/
+	margin-top:40px;
+	margin-left:5px;
+	animation: yogui;
+	-moz-animation: yogui 5s infinite;
+	-o-animation: yogui 5s infinite;
+	-webkit-animation-name: yogui; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 5s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-iteration-count: infinite;
+	
+}
+/*****************************************************ANIMACIONES**********************************/
+
+
+	
+}
+/*Enlace para ver video tutorial https://www.youtube.com/watch?feature=player_embedded&v=LeFmCLBgAeg*/
+
+/*probando levitacion keyframes INICIO*/
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes yogui {
+    0%   { left:0px; top:0px;}
+    
+    75%  { left:0px; top:60px;}
+    100% { left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes yogui {
+    0%   { left:0px; top:0px;}
+    
+    75%  { left:0px; top:60px;}
+    100% { left:0px; top:0px;}
+}
+
+/*probando levitacion keyframes FIN*/
+
+
+/*------------------Footer Styles-----------------------*/
+
+ #phonehome img {
+	margin-top: 20px;
+	width: auto;
+	height: auto;
+}	
+#ring {
+	color: #fff;
+}
+
+
+footer {
+	align-self: flex-end;
+	background-color: rgba(73,131,232, .8);
+	line-height: 3;
+	text-align: center;
+	width: 100%;
+	height: auto;
+
+}
+
+#foot p {
+	color: #fff;
+	font-size: 1em;
+	margin-top: 15px;
+	text-align: center;
+}
+
+/*Inicio del menu del footer*/
+#menufoot {
+	width: 100%;
+	clear: both;
+	text-decoration: none;
+}
+
+#menufoot li {
+
+	display: inline;
+	
+	/*background-color: #75cfe5;*/
+	
+}
+
+#menufoot a {
+	
+	display: inline;
+	border-right: 1px solid #576969;
+	color: #fff;
+	padding: 5px;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	text-shadow:  1px 1px 0px #283744;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing: border-box;
+	
+}
+#menufoot li:last-child a {
+	border-right: 0;
+}
+
+#menufoot a:hover, #menufoot a:active {
+	background-color: #7ba9e5;
+}
+
+#menufoot a:hover, #menufoot a:visited {
+	background-color: #283744;
+}
+
+/*------Fin Menu del Footer--------*/
+/*-------------------Inicio Iconos sociales---------------------*/
+
+.iconos_sociales {
+
+	list-style: none;
+	float: right;
+	width: 180px;
+	margin-top: 50px;
+	margin-left: 10em;
+	padding-right: 15px;
+	
+}
+
+.iconos_sociales a {
+	display: block;
+	background: url(../imagenes/iconos_sociales.png);
+	height: 60px;
+
+}
+/*---------------------FLOAT ICONOS SOCIALES-------------------*/
+.iconos_sociales li {
+
+	float: left;
+}
+/*------------------------------sprites-------------------------------*/
+.instagram a {
+
+	width: 40px;
+	padding-right: 5px;
+	background-position: 0 0;
+
+}
+.facebook a {
+
+	width: 40px;
+	background-position: -50px 0;
+}
+.linkedin a {
+
+	width: 40px;
+	background-position: -95px 0;
+}
+.twitter a {
+
+	width: 40px; 
+	background-position: -140px 0;
+}
+
+/*-----------------------------Alinear iconos sociales hover---------------------------------*/
+
+.instagram a:hover:hover {
+
+	width: 40px;
+	background-position: 0 -70px;
+
+}
+.facebook a:hover {
+
+	width: 40px;
+	background-position: -50px -70px;
+}
+.linkedin a:hover {
+
+	width: 40px;
+	background-position: -95px -70px;
+}
+.twitter a:hover {
+
+	width: 40px; 
+	background-position: -140px -70px;
+}
+
+/*----------------------Fin SPRITES------------------------------*/
+/*---------------------------------Fin de Footer Styles--------------*/

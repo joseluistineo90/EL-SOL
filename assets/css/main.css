@@ -3,6 +3,7 @@
 iframe {
 	max-width: 100%;
 }
+
 /*degradado repetido*/
 .degradados {
   width: 350px;
@@ -37,6 +38,30 @@ iframe {
   }
 }
 /*Fin degradado*/
+.columna {
+	max-width: 100%;
+	margin-left: 2px;
+	height:auto;
+	margin-top: auto;
+	display: block;
+	}
+
+.coltweet {
+	
+	max-width: 100%;
+	padding-left: 1%;
+	display: inline;
+	/*margin: auto;*/
+	
+
+	
+}
+.gifsol {
+	
+	width: 100%;
+	/*margin:auto;*/
+	display: inline;	
+}
 
 /*FIN DE TOGGLE BUTTON*/
 p.intro {
@@ -45,14 +70,16 @@ p.intro {
 	line-height: 1.2em;
 	color: blue;
 }
+
 a.phone {
     padding: .5em .5em 1em 30px;
-    background: url(data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFW…wHYmOTQ7KYJB/TvEGPNY6hChdQwdIF2CzF23eidacNIMAAxi/joc6jdacAAAAASUVORK5CYII=)no-repeat left center;
+    background:url(data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFW…wHYmOTQ7KYJB/TvEGPNY6hChdQwdIF2CzF23eidacNIMAAxi/joc6jdacAAAAASUVORK5CYII=)no-repeat left center;
    	border: 1px solid rgb(123, 121, 143);
     border-radius: 0.35em;
     margin: 1em auto;
     width: 210px;
     background-color: rgb(23,90,142);
+    color: white;
 	display: block;
 }
 h2.degree {
@@ -2133,7 +2160,11 @@ h2 {
 			.main > .content {
 				max-width: calc(100% - 1.5em);
 			}
-
+			.gifsol {
+	
+	margin-left: 1px;
+	max-width: 100%;
+}
 		}
 
 /* Footer */
@@ -2189,6 +2220,11 @@ h2 {
 			}
 
 		@media screen and (max-width: 1000px) {
+			.gifsol {
+	align: center;
+	margin-left: 10px;
+	max-width: 100%;
+}
 
 			#footer {
 				height: auto;
@@ -2297,5 +2333,10 @@ h2 {
 			#contact .box {
 				padding-bottom: 2em;
 			}
+			.gifsol {
+	align: center;
+	margin-left: 10px;
+	max-width: 100%;
+}
 
 		}
